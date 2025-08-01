@@ -16,7 +16,7 @@ if(CONFIG_SHIELD_PROSPECTOR_ADAPTER)
                 target_sources(app PRIVATE src/behaviors/behavior_caps_word.c)
         endif()
 
-        zephyr_library_sources(src/events/split_central_status_changed.c)
-        zephyr_library_sources(src/split/bluetooth/central_status_changed_observer.c)
+        target_sources(app PRIVATE src/events/split_central_status_changed.c)
+        target_sources(app PRIVATE src/split/bluetooth/central_status_changed_observer.c)
 
 endif()
