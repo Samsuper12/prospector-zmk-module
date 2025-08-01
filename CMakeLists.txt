@@ -17,6 +17,5 @@ if(CONFIG_SHIELD_PROSPECTOR_ADAPTER)
         endif()
 
         target_sources(app PRIVATE src/events/split_central_status_changed.c)
-        target_sources(app PRIVATE src/split/bluetooth/central_status_changed_observer.c)
 
 endif()
